@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.demonized.androidproject.MainActivity">
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/galleme_full"
+        android:layout_above="@id/crowd_selection"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+    <RadioGroup
+        android:background="#8080FF80"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/crowd_selection"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-Rated"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch"
+            android:textAllCaps="false"
+            android:onClick="crowdSelected"/>
+    </RadioGroup>
+</RelativeLayout>

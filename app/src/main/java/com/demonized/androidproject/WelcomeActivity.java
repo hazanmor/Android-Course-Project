@@ -215,5 +215,7 @@ public class WelcomeActivity extends AppCompatActivity {
             container.removeView(view);
         }
     }
+
+
 }
 

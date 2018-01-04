@@ -6,4 +6,13 @@
     <string name="start">GOT IT</string>
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
+    <string name="slide_1_title">Welcome</string>
+    <string name="slide_1_desc">With GalleME\\n You can present your friends with your trip!</string>
+    <string name="slide_2_title">MAYBE</string>
+    <string name="slide_2_desc">Maybe DESC</string>
+    <string name="slide_3_title">Slide 3 Title</string>
+    <string name="slide_3_desc">Slide 3 DESC</string>
+    <string name="slide_4_title">Slide 4 Title</string>
+    <string name="slide_4_desc">Slide 4 Desc</string>
+    <string name="keyword_view">Here will be shown all keywords currently displayed + the next ones to be displayed</string>
 </resources>
