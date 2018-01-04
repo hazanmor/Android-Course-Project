@@ -14,5 +14,5 @@
     <string name="slide_3_desc">Slide 3 DESC</string>
     <string name="slide_4_title">Slide 4 Title</string>
     <string name="slide_4_desc">Slide 4 Desc</string>
-    <string name="keyword_view">Here will be shown all keywords currently displayed + the next ones to be displayed</string>
+    <string name="keyword_view">Here will be shown all keywords currently displayed</string>
 </resources>
