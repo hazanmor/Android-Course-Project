@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/galleme_screen"
     xmlns:android="http://schemas.android.com/apk/res/android" >
-    <ImageView
+    <ProgressBar
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/galleme_full"
-        android:layout_above="@id/crowd_selection"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content" />
+        android:visibility="gone"
+        android:id="@+id/progress_main"
+        android:layout_above="@id/crowd_selection"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/load_button"
+        android:text="Load images data from gallery"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/crowd_selection"
+        android:background="@drawable/button"
 
+        android:onClick="startStorageRead"
+
+        android:textAllCaps="false"/>
     <RadioGroup
         android:background="#8080FF80"
         android:layout_margin="5dp"
@@ -36,6 +47,9 @@
             android:layout_height="wrap_content"
             android:text="Launch"
             android:textAllCaps="false"
+            android:id="@+id/launch"
+            android:background="@drawable/button"
+            android:clickable="false"
             android:onClick="crowdSelected"/>
     </RadioGroup>
 </RelativeLayout>

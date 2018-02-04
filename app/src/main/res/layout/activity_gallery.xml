@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@color/bg_screen3"
+    android:background="@drawable/background"
     tools:context="com.demonized.androidproject.GalleryActivity"
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <LinearLayout
@@ -16,10 +16,13 @@
 
         <ImageView
             android:layout_width="wrap_content"
+            android:elevation="4dp"
             android:padding="10dp"
+            android:id="@+id/main_image"
             android:layout_margin="4dp"
             android:layout_weight="3"
-            android:background="@drawable/puzzle1"
+            android:scaleType="fitXY"
+            android:background="@drawable/placeholder"
             android:layout_height="match_parent" />
         <LinearLayout
             android:layout_width="wrap_content"
@@ -28,21 +31,33 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="wrap_content"
+                android:elevation="4dp"
+                android:padding="3dp"
+                android:id="@+id/alternate_first"
                 android:layout_margin="2dp"
-                android:background="@drawable/puzzle2"
+                android:scaleType="fitXY"
+                android:background="@drawable/placeholder"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:layout_width="wrap_content"
+                android:elevation="4dp"
                 android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@drawable/tamar1"
+                android:scaleType="fitXY"
+                android:padding="3dp"
+                android:background="@drawable/placeholder"
+                android:id="@+id/alternate_second"
                 android:layout_height="wrap_content" />
-            <ImageView
+            <FrameLayout
                 android:layout_width="wrap_content"
+                android:elevation="4dp"
                 android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@drawable/puzzle3"
+                android:scaleType="fitXY"
+                android:background="@drawable/placeholder"
+                android:padding="3dp"
+                android:id="@+id/alternate_third"
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
@@ -54,16 +69,19 @@
         android:layout_margin="3dp"
         android:padding="2dp"
         android:layout_weight="3"
+
         android:layout_width="wrap_content"
-        android:background="#AA00F0AA"
+        android:elevation="4dp"
+        android:background="#AAFFFFFF"
         android:id="@+id/keywords"
         android:layout_height="wrap_content"
+        android:maxLines="1"
         android:text="@string/keyword_view"/>
     <ProgressBar
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:padding="2dp"
         android:layout_margin="3dp"
-        android:layout_weight="10"
+        android:id="@+id/progress_gallery"
         android:visibility="invisible"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_height="wrap_content" />
